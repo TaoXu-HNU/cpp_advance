@@ -6,3 +6,5 @@ project(cpp_advance)  # 项目的名称
 add_executable(pointer      # 将cpp文件编译成可执行文件sdk       
 src/pointer.cpp 
 )
+
+include_directories(${PROJECT_SOURCE_DIR}/src/include)
