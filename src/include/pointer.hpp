@@ -18,10 +18,17 @@ public:
 
     void pointer_to_Arrays();  // 指针指向数组
 
-    void pointer_to_Function(); // 指针指向函数
+    int  pointer_to_Function(int a);  // 指针指向函数并实现函数调用
 
-    void pointer_Return_Function(); // 函数返回指针
+    int  pointer_income_Function(int a, int (Pointer::*callback)() ); // 把函数作为参数进行传入(基于指针)
 
+    int  *function_Return_Pointer(); // 函数返回地址
 
+    int  funcA();
+    int  funcB();
+    int  funcC();
+
+private:
+    int *p2memory;  // 指向堆内存的指针，需要手动释放
     
 };
