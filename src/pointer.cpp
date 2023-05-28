@@ -143,8 +143,8 @@ int main(int argc, char **argv)
     // int (Pointer::*funP)(int c) = &Pointer::pointer_to_Function;  // 声明指向函数的指针(指向类中的函数时需要加上“::”符号)
     // int ret = (pointer->*funP)(666);   // 通过指针调用函数
 
-    // 函数作为参数传入(基于指针实现)，属于址传递的范畴
-    pointer->pointer_income_Function(888, &Pointer::funcB);
+    // // 函数作为参数传入(基于指针实现)，属于址传递的范畴
+    // pointer->pointer_income_Function(888, &Pointer::funcB);
 
     // // 函数返回一个地址
     // int *func2point = pointer->function_Return_Pointer(); 
